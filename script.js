@@ -20,3 +20,7 @@ function handleClick(event) {
 buttons.forEach(function (button) {
   button.addEventListener("click", handleClick);
 });
+
+input.addEventListener("input", function (event) {
+  h1.style.setProperty("--color", event.target.value);
+});
