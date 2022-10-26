@@ -1,5 +1,8 @@
 const h1 = document.querySelector("h1");
+
 const h2 = document.querySelector(".art-title");
+
+const input = document.querySelector("input");
 
 const buttons = document.querySelectorAll("button");
 
@@ -8,9 +11,9 @@ function handleClick(event) {
     Number.parseFloat(getComputedStyle(h2).getPropertyValue("--font-size")) +
     0.05;
   if (event.target.id === "increase") {
-    h2.style.setProperty("--font-size", currentFontSize + 0.5 + "em");
+    h2.style.setProperty("--font-size", currentFontSize + 0.05 + "em");
   } else {
-    h2.style.setProperty("--font-size", currentFontSize - 0.5 + "em");
+    h2.style.setProperty("--font-size", currentFontSize - 0.05 + "em");
   }
 }
 
